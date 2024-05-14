@@ -73,6 +73,20 @@ C L E A R F I X
 /* 
 =================================================
 
+C U S T O M   S T Y L E S
+
+=================================================
+*/
+
+body {
+    background: #293f50;
+    color: #888;
+    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* 
+=================================================
+
 T Y P O G R A P H Y
 
 =================================================
@@ -82,6 +96,83 @@ h1, h3, h4, h5, p {
     margin-bottom: 22px;
 }
 
+h1, h2, h3, h4 {
+    color: #648880;
+}
+
+h1{
+    font-size: 36px;
+    line-height: 44px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 44px;
+}
+
+h3{
+    font-size: 21px;
+}
+
+h4{
+    font-size: 38px;
+}
+
+h5{
+    color: #a9b2b9;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+strong {
+    font-weight: 400;
+}
+
+cite, em {
+    font-style: italic;
+}
+
+/* 
+=================================================
+
+L I N K S
+
+=================================================
+*/
+
+a {
+    color: #648880;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a9b2b9;
+}
+
+p a {
+    border-bottom: 1px solid #dfe2e5;
+}
+
+.primary-header a,
+.primary-footer a{
+    color: #fff;
+}
+
+.primary-header a:hover,
+.primary-footer a:hover{
+    color: #648880;
+}
+
+.logo{
+    border-top: 4px solid #648880;
+    float: left;
+    font-size: 48px;
+    font-weight: 100;
+    line-height: 44px;
+    padding: 40px 0 22px 0;
+    text-transform: uppercase;
+}
 /* 
 =================================================
 
@@ -92,13 +183,37 @@ B U T T O N S
 
 .btn {
     border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
     display: inline-block;
+    font-weight: 400;
+    letter-spacing: .5px;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .btn-alt {
-    border: 1px solid #dfe2e5;
+    border: 1px solid #fff;
     padding:10px 30px;
+}
+
+.btn-alt:hover {
+    background-color: #fff;
+    color: #648880;
+}
+
+/* 
+===============================================
+
+R O W S
+
+===============================================
+*/
+
+.row{
+    background: #fff;
+    min-width: 960px;
+    padding: 66px 0 44px 0;
 }
 
 /* 
@@ -115,6 +230,17 @@ P R I M A R Y   H E A D E R
     float: left;
 }
 
+.tagline{
+    margin: 66px 0 22px 0;
+    text-align: right;
+}
+
+.primary-nav{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
 /* 
 ===============================================
 
@@ -123,15 +249,29 @@ P R I M A R Y   F O O T E R
 ===============================================
 */
 
+.primary-footer{
+    color: #648880;
+    font-size: 14px;
+    padding-bottom: 44px;
+    padding-top: 44px;
+}
+
 .primary-footer small{
     float: left;
+    font-weight: 400;
 }
 
-.primary-footer {
-    padding-top: 44px;
-    padding-bottom: 44px;
-}
+/* 
+================================================
 
+N A V I G A T I O N
+
+================================================
+*/
+
+.nav{
+    text-align: right;
+}
 
 /* 
 ================================================
@@ -142,5 +282,21 @@ H O M E
 */
 
 .hero {
+    color: #fff;
+    line-height: 44px;
     padding: 22px 80px 66px 80px;
+    text-align: center;
+}
+
+.hero h2{
+    font-size: 36px;
+}
+
+.hero p{
+    font-size: 24px;
+    font-weight: 100;;
+}
+
+.teaser a:hover h3{
+    color: #a9b2b9;
 }
